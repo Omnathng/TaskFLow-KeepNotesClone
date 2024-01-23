@@ -1,0 +1,117 @@
+/* styles.css */
+
+/* Navbar styles */
+nav{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 8px 16px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .icon:hover {
+    width:50px;
+    top:auto;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd; /* Lighter color for hover effect */
+  }
+  .icn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icn:hover
+  {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icns:hover
+  {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-start {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-start i {
+    margin-top: 1px;
+  }
+  
+  .search-container {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+  }
+  
+  .search-container input {
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+  }
+  
+  .nav-end {
+    
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-end i {
+    margin-left: 16px;
+  }
+  
+  .profile-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: blue;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    padding-left: 2%;
+    background: #fff;
+    top: 0;
+    transition: width 0.9s ease;
+  }
+  
+  .sidebar.hidden {
+    width: 5%;
+    transition: width 0.9s ease;
+  }
+  
+  .shortcut-links {
+    transition: opacity 0.3s ease;
+  }
+  
+  .shortcut-links.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  

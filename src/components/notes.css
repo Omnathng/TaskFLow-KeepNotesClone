@@ -1,0 +1,38 @@
+/* Add this to your existing CSS file or create a new one */
+
+.notes-container {
+    position: fixed;
+    top: 72px; /* Height of your Navbar */
+    left: 15%;
+    margin-left: 5px;
+    width: max-content; /* Adjust the width as needed */
+    background-color: #fff;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.2);
+    padding: 15px;
+    z-index: 10;
+    transition: right 0.3s ease;
+  }
+  
+  .align-right {
+    left: 10%; /* Adjust the distance from the right side */
+  }
+  
+  .notes {
+    position: relative;
+    top: 172px; /* Height of your Navbar */
+    left: 15%;
+    margin-left: 5px;
+    width: 83%; /* Adjust the width as needed */
+    background-color: #fff;
+    padding: 15px;
+    transition: right 0.3s ease;
+    z-index: 0;
+  }
+ .ntcard i{
+    visibility: hidden;
+    transition: visibility 0.1s ease;
+ }
+ 
+ .ntcard:hover i{
+  visibility: visible;
+ }
