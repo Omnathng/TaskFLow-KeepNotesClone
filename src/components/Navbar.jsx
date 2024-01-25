@@ -49,13 +49,13 @@ function Navbar() {
             </div>
         </nav>
 
-
+          {/* sideBar */}
         <div className={`${sidebarVisible ? 'sidebar' : 'sidebar-small'} pt-5 mt-5`} style={{ width: sidebarVisible ? '15%' : '10%', height: 'calc(max-content - 60px)', position: 'fixed', paddingLeft:sidebarVisible? '2%':'4%', background: '#fff', top: '25px', boxShadow: '0 0 0.5rem rgba(0,0,0,0.2), 0.5rem 0 1rem rgba(0,0,0,0.1)', transition: 'width 0.3s ease' }}>
               <div className='shortcut-links'>
-                <a href='' style={{ textDecoration: 'none', color: '#000', display: 'flex', alignItems: 'center', flexWrap: 'wrap', width: 'fit-content' }}>
+                <Link to={"/home"} style={{ textDecoration: 'none', color: '#000', display: 'flex', alignItems: 'center', flexWrap: 'wrap', width: 'fit-content' }}>
                   <i className="icn fa-regular fa-clipboard fa-lg" style={{ marginRight: '8px', marginTop: sidebarVisible ? "" : "25px" }}></i>
                   <p className={`ms-3 mt-2 ${sidebarVisible ? '' : 'd-none'}`}>Notes</p>
-                </a>
+                </Link>
 
                 <a href='' style={{ textDecoration: 'none', color: '#000', display: 'flex', alignItems: 'center', flexWrap: 'wrap', width: 'fit-content' }}>
                   <i className="icn fa-regular fa-bell fa-lg" style={{ marginRight: '8px', marginTop: sidebarVisible ? "" : "50px" }}></i>
